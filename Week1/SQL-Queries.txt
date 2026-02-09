@@ -1,0 +1,38 @@
+SQL Builtin and User-Defined Functions:
+
+SQL Builtin Functions:
+
+- Scalar builtin functions
+
+  SELECT UPPER('hello world');
+  SELECT LOWER('HELLO WORLD');
+  SELECT LENGTH('Database');
+  SELECT ROUND(12.567, 2);
+
+- Aggregate builtin functions
+
+  SELECT SUM(salary) FROM employees;
+  SELECT AVG(salary) FROM employees;
+  SELECT COUNT(*) FROM employees WHERE salary>=50000;
+
+- Date & Time functions
+
+  SELECT NOW();
+  SELECT CURRENT_DATE;
+
+- String functions
+
+  SELECT SUBSTRING('Computer', 1, 4);
+  SELECT CHAR_LENGTH('SQL');
+
+SQL User-Defined Functions:
+
+A user defined function which finds the area of a circle
+
+CREATE FUNCTION areaOfCircle(radius INT)
+RETURNS FLOAT AS
+BEGIN
+  RETURN PI() * radius * radius
+END;
+
+SELECT radius, areaOfCircle(radius) FROM circleTable;
