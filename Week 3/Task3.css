@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f3f4f6;
+}
+
+/* HEADER */
+
+header{
+    background:#111827;
+    color:white;
+    padding:18px;
+    text-align:center;
+}
+
+header h1{
+    font-size:24px;
+    font-weight:600;
+}
+
+/* MAIN LAYOUT */
+
+.container{
+    display:flex;
+}
+
+/* FILTER PANEL */
+
+.filters{
+    width:260px;
+    background:white;
+    padding:25px;
+    border-right:1px solid #e5e7eb;
+
+    /* ⭐ prevents giant sidebar */
+    height:fit-content;
+}
+
+.filters h2{
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.filters h3{
+    font-size:15px;
+    margin-top:18px;
+}
+
+/* PRODUCTS GRID */
+
+.products{
+    flex:1;
+    padding:35px;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:20px;
+
+    /* ⭐ MOST IMPORTANT FIX */
+    align-items:start;
+}
+
+/* PRODUCT CARD */
+
+.product{
+    background:white;
+    padding:16px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.05);
+
+    height:auto;        /* prevents stretching */
+    align-self:start;   /* extra safety */
+
+    transition:0.2s;
+}
+
+.product:hover{
+    transform:translateY(-4px);
+}
+
+/* PRODUCT TITLE */
+
+.product h3{
+    font-size:15px;     /* ⭐ smaller heading */
+    font-weight:600;
+    margin-bottom:6px;
+}
+
+/* PRICE + RATING */
+
+.product p{
+    font-size:14px;
+    color:#4b5563;
+    margin-top:2px;
+}
