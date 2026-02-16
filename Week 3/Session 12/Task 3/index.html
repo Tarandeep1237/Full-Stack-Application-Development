@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Professional Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="form-container">
+
+    <h1>Registration Form</h1>
+    <p class="subtitle">Please fill out the form below</p>
+
+    <form action="#" method="post" aria-labelledby="formHeading">
+
+        <!-- Full Name -->
+        <div class="form-group">
+            <label for="fullName">Full Name <span class="required">*</span></label>
+            <input type="text"
+                   id="fullName"
+                   name="fullName"
+                   placeholder="Enter your full name"
+                   required
+                   aria-required="true"
+                   aria-label="Full Name">
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input type="email"
+                   id="email"
+                   name="email"
+                   placeholder="Enter your email address"
+                   required
+                   aria-required="true"
+                   aria-label="Email Address">
+        </div>
+
+        <!-- Category -->
+        <div class="form-group">
+            <label for="category">Participation Category <span class="required">*</span></label>
+            <select id="category"
+                    name="category"
+                    required
+                    aria-required="true"
+                    aria-label="Select participation category">
+                <option value="">-- Select Category --</option>
+                <option value="individual">Individual</option>
+                <option value="team">Team</option>
+                <option value="audience">Audience</option>
+            </select>
+        </div>
+
+        <!-- T-Shirt Size -->
+        <div class="form-group">
+            <label>T-Shirt Size</label>
+            <div class="radio-group">
+                <label><input type="radio" name="tshirt" value="S"> S</label>
+                <label><input type="radio" name="tshirt" value="M"> M</label>
+                <label><input type="radio" name="tshirt" value="L"> L</label>
+                <label><input type="radio" name="tshirt" value="XL"> XL</label>
+            </div>
+        </div>
+
+        <!-- Hobbies -->
+        <div class="form-group">
+            <label>Hobbies</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="hobbies" value="Reading"> Reading</label>
+                <label><input type="checkbox" name="hobbies" value="Traveling"> Traveling</label>
+                <label><input type="checkbox" name="hobbies" value="Sports"> Sports</label>
+                <label><input type="checkbox" name="hobbies" value="Music"> Music</label>
+                <label><input type="checkbox" name="hobbies" value="Gaming"> Gaming</label>
+            </div>
+        </div>
+
+        <!-- Biography / Expectations -->
+        <div class="form-group">
+            <label for="bio">Biography / Expectations</label>
+            <textarea id="bio"
+                      name="bio"
+                      placeholder="Write a brief biography or your expectations (max 200 characters)"
+                      maxlength="200"
+                      rows="4"
+                      aria-label="Biography or Expectations"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">Register</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

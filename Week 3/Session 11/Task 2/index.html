@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media Blog Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>My Media Blog</h1>
+    <p>Content-driven blog with video & audio streaming</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <!-- Blog Post -->
+    <article class="post">
+        <h2>Exploring Nature Through Video</h2>
+        <p class="meta">Published on February 2026</p>
+        <p>
+            Enjoy this beautiful nature video streamed directly inside our blog platform.
+        </p>
+
+        <div class="media-container">
+            <video id="blogVideo" width="100%" poster="https://via.placeholder.com/800x400" >
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+
+            <div class="video-controls">
+                <button onclick="playVideo()">Play</button>
+                <button onclick="pauseVideo()">Pause</button>
+                <button onclick="stopVideo()">Stop</button>
+            </div>
+        </div>
+    </article>
+
+    <!-- Audio Blog -->
+    <article class="post">
+        <h2>Relaxing Podcast Episode</h2>
+        <p class="meta">Audio Experience</p>
+        <p>
+            Listen to our relaxing podcast episode directly from the blog.
+        </p>
+
+        <div class="media-container">
+            <audio id="blogAudio">
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+
+            <div class="audio-controls">
+                <button onclick="playAudio()">Play</button>
+                <button onclick="pauseAudio()">Pause</button>
+                <button onclick="stopAudio()">Stop</button>
+                <input type="range" id="audioSeek" value="0">
+            </div>
+        </div>
+    </article>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 My Media Blog Platform</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

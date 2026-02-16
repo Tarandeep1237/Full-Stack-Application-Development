@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tantraz Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="form-container">
+
+    <h1>Tantraz Registration</h1>
+    <p class="subtitle">Join the ultimate tech experience</p>
+
+    <form action="#" method="post" aria-labelledby="formHeading">
+
+        <!-- Full Name -->
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text"
+                   id="fullName"
+                   name="fullName"
+                   placeholder="Enter your full name"
+                   required
+                   aria-required="true"
+                   aria-label="Full Name">
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email"
+                   id="email"
+                   name="email"
+                   placeholder="Enter your email"
+                   required
+                   aria-required="true"
+                   aria-label="Email Address">
+        </div>
+
+        <!-- Participation Category -->
+        <div class="form-group">
+            <label for="category">Participation Category</label>
+            <select id="category"
+                    name="category"
+                    required
+                    aria-required="true"
+                    aria-label="Select participation category">
+                <option value="">-- Select Category --</option>
+                <option value="individual">Individual</option>
+                <option value="team">Team</option>
+                <option value="audience">Audience</option>
+            </select>
+        </div>
+
+        <!-- T-Shirt Size -->
+        <div class="form-group">
+            <label>T-Shirt Size</label>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="tshirt" value="S" required> S
+                </label>
+                <label>
+                    <input type="radio" name="tshirt" value="M"> M
+                </label>
+                <label>
+                    <input type="radio" name="tshirt" value="L"> L
+                </label>
+                <label>
+                    <input type="radio" name="tshirt" value="XL"> XL
+                </label>
+            </div>
+        </div>
+
+        <!-- Technical Interests -->
+        <div class="form-group">
+            <label>Technical Interests</label>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" name="interests" value="AI"> AI
+                </label>
+                <label>
+                    <input type="checkbox" name="interests" value="Web Development"> Web Dev
+                </label>
+                <label>
+                    <input type="checkbox" name="interests" value="Cloud Computing"> Cloud Computing
+                </label>
+            </div>
+        </div>
+
+        <!-- Expectations -->
+        <div class="form-group">
+            <label for="expectations">Expectations / Suggestions</label>
+            <textarea id="expectations"
+                      name="expectations"
+                      rows="4"
+                      placeholder="Share your expectations or suggestions"
+                      aria-label="Expectations or suggestions"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">Register Now</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
