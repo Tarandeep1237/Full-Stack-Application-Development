@@ -1,0 +1,136 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* HEADER */
+header {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+}
+
+/* FILTER SIDEBAR */
+.filters {
+    width: 220px;
+    background: #fff;
+    padding: 15px;
+    border-right: 1px solid #ddd;
+}
+
+.filter-group {
+    margin-bottom: 20px;
+}
+
+.filter-group h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.filter-group label {
+    font-size: 13px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.colors {
+    display: flex;
+    gap: 6px;
+}
+
+.color-btn {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.color-btn.active {
+    border: 3px solid black;
+}
+
+#priceRange {
+    width: 100%;
+}
+
+#clearFilters {
+    width: 100%;
+    padding: 6px;
+    border: none;
+    background: crimson;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* PRODUCTS GRID */
+.products {
+    flex: 1;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+}
+
+/* SMALL PRODUCT CARD */
+.product-card {
+    background: white;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+    font-size: 12px;
+}
+
+.product-card h4 {
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.price {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.rating {
+    font-size: 11px;
+    color: orange;
+    margin-bottom: 3px;
+}
+
+.product-card p {
+    font-size: 11px;
+    margin-bottom: 2px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .filters {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .products {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+}
