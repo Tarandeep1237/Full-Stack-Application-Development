@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  text-align: center;
+  padding: 40px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+
+.team {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.team p {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.reset {
+  margin-top: 20px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+}

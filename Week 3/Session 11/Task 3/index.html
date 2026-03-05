@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Commerce Advanced Filters</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>ShopEase</h1>
+</header>
+
+<div class="container">
+
+    <!-- FILTER SIDEBAR -->
+    <aside class="filters">
+
+        <h2>Filters</h2>
+
+        <!-- Price Filter -->
+        <div class="filter-group">
+            <h3>Price Range</h3>
+            <input type="range" id="priceRange" min="0" max="2000" value="2000">
+            <p>Up to $<span id="priceValue">2000</span></p>
+        </div>
+
+        <!-- Color Filter -->
+        <div class="filter-group">
+            <h3>Color</h3>
+            <div class="colors">
+                <button class="color-btn" data-color="red" style="background:red;"></button>
+                <button class="color-btn" data-color="blue" style="background:blue;"></button>
+                <button class="color-btn" data-color="black" style="background:black;"></button>
+                <button class="color-btn" data-color="green" style="background:green;"></button>
+            </div>
+        </div>
+
+        <!-- Brand Filter -->
+        <div class="filter-group">
+            <h3>Brand</h3>
+            <label><input type="checkbox" value="Nike"> Nike</label>
+            <label><input type="checkbox" value="Adidas"> Adidas</label>
+            <label><input type="checkbox" value="Puma"> Puma</label>
+        </div>
+
+        <!-- Rating Filter -->
+        <div class="filter-group">
+            <h3>Customer Rating</h3>
+            <select id="ratingFilter">
+                <option value="0">All Ratings</option>
+                <option value="4">4★ & Above</option>
+                <option value="3">3★ & Above</option>
+                <option value="2">2★ & Above</option>
+            </select>
+        </div>
+
+        <button id="clearFilters">Clear Filters</button>
+
+    </aside>
+
+    <!-- PRODUCTS -->
+    <main class="products" id="productList">
+        <!-- Products inserted via JS -->
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f3f4f6;
+}
+
+/* movement area */
+.playground {
+  width: 80vw;
+  height: 60vh;
+  margin: 40px auto;
+  border: 3px solid #333;
+  position: relative;
+  background: white;
+  overflow: hidden;
+}
+
+/* movable object (square) */
+#box {
+  width: 60px;
+  height: 60px;
+  background: #2563eb;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 8px;
+  transition: transform 0.05s linear;
+}
